@@ -14,7 +14,7 @@ public class RoomTitle : RoomScript<RoomTitle>
 		G.InfoBar.Clickable = false;
 		G.Inventory.Clickable = false;
 		
-		// Later we could start some music here
+		// Play Intro Music
 		Audio.PlayMusic("SoundRetro Traditional Theme", 1);
 	}
 
@@ -79,6 +79,44 @@ public class RoomTitle : RoomScript<RoomTitle>
 	}
 
 	public IEnumerator OnUseInvPropContinue( IProp prop, IInventory item )
+	{
+
+		yield return E.Break;
+	}
+
+	public void Update()
+	{
+	}
+
+	public IEnumerator OnExitRoom( IRoom oldRoom, IRoom newRoom )
+	{
+
+		yield return E.Break;
+	}
+
+	public IEnumerator OnAnyClick()
+	{
+
+		yield return E.Break;
+	}
+
+	public IEnumerator OnWalkTo()
+	{
+
+		yield return E.Break;
+	}
+
+	public void OnPostRestore( int version )
+	{
+	}
+
+	public IEnumerator OnLookAtPropNew( IProp prop )
+	{
+
+		yield return E.Break;
+	}
+
+	public IEnumerator OnUseInvPropNew( IProp prop, IInventory item )
 	{
 
 		yield return E.Break;
