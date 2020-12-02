@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1578086030951455986
+--- !u!1 &5199852923250896554
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,22 +8,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7236611089291518416}
-  - component: {fileID: 7852260169103867364}
+  - component: {fileID: 1931862736072429141}
+  - component: {fileID: 5652357667512697347}
   m_Layer: 0
-  m_Name: SoundClothEquipment_Equip
+  m_Name: SoundBarrel_Examine_Start
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7236611089291518416
+--- !u!4 &1931862736072429141
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1578086030951455986}
+  m_GameObject: {fileID: 5199852923250896554}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -31,13 +31,13 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7852260169103867364
+--- !u!114 &5652357667512697347
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1578086030951455986}
+  m_GameObject: {fileID: 5199852923250896554}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a0f23f8c8a71fc149b63985b43cfa47a, type: 3}
@@ -52,8 +52,8 @@ MonoBehaviour:
     m_hasValue: 0
   m_pitch:
     m_min: 1
-    m_max: 3
-    m_hasMax: 1
+    m_max: 1
+    m_hasMax: 0
     m_hasValue: 0
   m_alsoPlay: {fileID: 0}
   m_chance: 1
@@ -71,7 +71,7 @@ MonoBehaviour:
   m_highPassFilter: {fileID: 0}
   m_chorusFilter: {fileID: 0}
   m_sounds:
-  - m_sound: {fileID: 8300000, guid: e6e5c98bc99e5ea459c2a6db4e85d32c, type: 3}
+  - m_sound: {fileID: 8300000, guid: 8cb76aea4747d1a45af707d6ff27dedd, type: 3}
     m_weight: 100
     m_loop: 0
     m_volume:

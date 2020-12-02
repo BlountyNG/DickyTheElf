@@ -181,4 +181,10 @@ public class RoomForest : RoomScript<RoomForest>
 
 		yield return E.Break;
 	}
+
+	public IEnumerator OnWalkTo()
+	{
+
+		yield return E.Break;
+	}
 }
