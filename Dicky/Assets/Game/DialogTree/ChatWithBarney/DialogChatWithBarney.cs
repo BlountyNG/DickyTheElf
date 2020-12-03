@@ -101,16 +101,4 @@ public class DialogChatWithBarney : DialogTreeScript<DialogChatWithBarney>
 		Stop();
 		yield return E.Break;
 	}
-
-	public IEnumerator OnStart()
-	{
-
-		yield return E.Break;
-	}
-
-	public IEnumerator OnStop()
-	{
-
-		yield return E.Break;
-	}
 }
