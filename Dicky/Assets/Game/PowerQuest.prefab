@@ -87,6 +87,7 @@ MonoBehaviour:
   m_roomPrefabs:
   - {fileID: 114788632828080210, guid: 908a928d57ccea1418803714fc2b24b8, type: 3}
   - {fileID: 114107578643181592, guid: 815776d2d5a9623498c61578ffc4c1cc, type: 3}
+  - {fileID: 5468540750368545339, guid: 85655875f2aef204788f41778fca9eb5, type: 3}
   m_characterPrefabs:
   - {fileID: 114953134120639602, guid: b4910caf4195aeb45895069ad277b9fd, type: 3}
   - {fileID: 114894982771319608, guid: 65de018bf92bf6a4088d8c3f977119e7, type: 3}
