@@ -330,6 +330,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4865622036928958}
   - component: {fileID: 114107578643181592}
+  - component: {fileID: 2596401848576291488}
   m_Layer: 0
   m_Name: RoomForest
   m_TagString: Untagged
@@ -411,6 +412,25 @@ MonoBehaviour:
   - {fileID: 7400000, guid: afda5bb61eabe8e4cbf0d080e5484992, type: 2}
   - {fileID: 7400000, guid: d843470db05c0414d9a6755e8635619a, type: 2}
   - {fileID: 7400000, guid: a413e9f044686174da81f504e8855cd8, type: 2}
+--- !u!95 &2596401848576291488
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1151944032685666}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0b7b33c82c17f0f489be7087fc39f471, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1188119584316416
 GameObject:
   m_ObjectHideFlags: 0

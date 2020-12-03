@@ -357,7 +357,7 @@ GameObject:
   - component: {fileID: 1705486489}
   - component: {fileID: 1705486491}
   - component: {fileID: 1705486490}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Snow Generator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
