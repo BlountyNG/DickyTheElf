@@ -16,10 +16,6 @@ public class RoomTitle : RoomScript<RoomTitle>
 		
 		// Play Intro Music
 		Audio.PlayMusic("SoundRetro Traditional Theme", 1);
-		
-		
-		//Player Footstep sound
-		C.Player.FootstepSound = "SoundFootsteps_Casual_Earth_01";
 	}
 
 	public IEnumerator OnEnterRoomAfterFade()
@@ -94,7 +90,7 @@ public class RoomTitle : RoomScript<RoomTitle>
 
 	public IEnumerator OnExitRoom( IRoom oldRoom, IRoom newRoom )
 	{
-		
+
 		yield return E.Break;
 	}
 
