@@ -15,7 +15,7 @@ public class RoomTitle : RoomScript<RoomTitle>
 		G.Inventory.Clickable = false;
 		
 		// Play Intro Music
-		Audio.PlayMusic("SoundRetro Traditional Theme", 1, 3f);
+		Audio.PlayMusic("SoundRetro Traditional Theme", 1);
 		
 		
 		//Player Footstep sound
@@ -121,12 +121,6 @@ public class RoomTitle : RoomScript<RoomTitle>
 	}
 
 	public IEnumerator OnUseInvPropNew( IProp prop, IInventory item )
-	{
-
-		yield return E.Break;
-	}
-
-	public IEnumerator UpdateBlocking()
 	{
 
 		yield return E.Break;

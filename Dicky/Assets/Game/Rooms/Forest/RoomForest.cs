@@ -10,13 +10,7 @@ public class RoomForest : RoomScript<RoomForest>
 
 	public void OnEnterRoom()
 	{
-		
-		
-		//Stop Title Music
-		Audio.StopMusic(2f);
-		
-		//Player Footstep sound
-		C.Player.FootstepSound = "SoundFootsteps_Casual_Earth_01";
+
 	}
 
 	public IEnumerator OnEnterRoomAfterFade()
@@ -24,7 +18,7 @@ public class RoomForest : RoomScript<RoomForest>
 		yield return C.Dave.Say("Well, I guess this is a test project for an adventure game");
 		yield return C.Dave.WalkTo(Point("EntryWalk"));
 		yield return C.Dave.Say("Sure looks adventurey!");
-		Audio.PlayMusic("MusicExample", 3f);
+		Audio.PlayMusic("MusicExample");
 		yield return E.Break;
 	}
 
@@ -192,21 +186,5 @@ public class RoomForest : RoomScript<RoomForest>
 	{
 
 		yield return E.Break;
-	}
-
-	public IEnumerator OnLookAtHotspotSky( IHotspot hotspot )
-	{
-
-		yield return E.Break;
-	}
-
-	public IEnumerator UpdateBlocking()
-	{
-
-		yield return E.Break;
-	}
-
-	public void Update()
-	{
 	}
 }
