@@ -53,7 +53,7 @@ MonoBehaviour:
     m_dialogDisplay: 0
     m_speechStyle: 0
     m_speechPortraitLocation: 0
-    m_transitionFadeTime: 0.3
+    m_transitionFadeTime: 3
     m_alwaysShowDisplayText: 1
     m_languageCode: EN
   m_verticalResolution: 180

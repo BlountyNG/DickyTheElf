@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1101817795647072}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -159.99998, y: 910.00006, z: 0}
+  m_LocalPosition: {x: -159.84782, y: 910.00006, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4862606416018764}
@@ -91,8 +91,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_itemSpacing: 0
-  m_colorDefault: {r: 0.35686275, g: 0.43137258, b: 0.882353, a: 1}
-  m_colorUsed: {r: 0.24705884, g: 0.24705884, b: 0.454902, a: 1}
+  m_colorDefault: {r: 0.28435388, g: 0.8490566, b: 0.33564037, a: 1}
+  m_colorUsed: {r: 0.39609292, g: 0.39609292, b: 0.4056604, a: 1}
   m_colorHover: {r: 1, g: 1, b: 1, a: 1}
   m_textInstance: {fileID: 1834133629796872}
   m_background: {fileID: 114653357389249032}
@@ -219,7 +219,7 @@ SpriteRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: 5349c2df1fa31f74dbc66c2ba9ed929f, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.4339623, g: 0, b: 0.046627387, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

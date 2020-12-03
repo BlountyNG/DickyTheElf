@@ -15,7 +15,7 @@ public class RoomTitle : RoomScript<RoomTitle>
 		G.Inventory.Clickable = false;
 		
 		// Play Intro Music
-		Audio.PlayMusic("SoundRetro Traditional Theme", 1);
+		Audio.PlayMusic("SoundRetro Traditional Theme", 1, 3f);
 		
 		
 		//Player Footstep sound
@@ -94,7 +94,7 @@ public class RoomTitle : RoomScript<RoomTitle>
 
 	public IEnumerator OnExitRoom( IRoom oldRoom, IRoom newRoom )
 	{
-		
+		Audio.StopMusic(2f);
 		yield return E.Break;
 	}
 
