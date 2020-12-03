@@ -886,7 +886,7 @@ MonoBehaviour:
   m_mouseEdgeDistanceHide: {x: 90, y: 25}
   m_edgeX: 1
   m_edgeY: 1
-  m_pauseWhenVisible: 0
+  m_pauseWhenVisible: 1
   m_dropDownDistance: 17
   m_curveIn:
     serializedVersion: 2
@@ -937,8 +937,10 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 0
   m_hideDuringCutscenes: 1
-  m_soundShow: {fileID: 0}
-  m_soundHide: {fileID: 0}
+  m_soundShow: {fileID: 644253385516732018, guid: 272b43df6d9e7074cb0c83422d31c231,
+    type: 3}
+  m_soundHide: {fileID: 754369056519130486, guid: ca6d05581402c444886439767c283487,
+    type: 3}
 --- !u!114 &11408990
 MonoBehaviour:
   m_ObjectHideFlags: 0
