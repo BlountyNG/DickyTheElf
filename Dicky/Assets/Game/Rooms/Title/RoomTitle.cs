@@ -8,6 +8,7 @@ public class RoomTitle : RoomScript<RoomTitle>
 	public void OnEnterRoom()
 	{
 		
+		
 		// Hide the inventory and info bar in the title
 		G.InfoBar.Visible = false;
 		G.Inventory.Visible = false;
@@ -51,6 +52,8 @@ public class RoomTitle : RoomScript<RoomTitle>
 		
 		// This is the point the game will skip to if ESC is pressed
 		E.EndCutscene();
+		
+		GameObject.Find("NGHelper").GetComponent<NGHelper>().unlockMedal(61339);
 	}
 
 
