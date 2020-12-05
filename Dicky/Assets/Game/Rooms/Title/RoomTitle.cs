@@ -67,7 +67,7 @@ public class RoomTitle : RoomScript<RoomTitle>
 		G.Inventory.Clickable = true;
 		
 		// Move the player to the room
-		C.Player.Room = R.Forest;
+		C.Player.Room = R.MailRoom;
 		yield return E.Break;
 	}
 
