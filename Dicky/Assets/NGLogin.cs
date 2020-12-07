@@ -2,10 +2,11 @@
 using UnityEngine.SceneManagement;
 
 
-public class NGLogin: MonoBehaviour
+public class NGLoginButton : MonoBehaviour
 {
     public void NextScene()
     {
         SceneManager.LoadScene("SceneRoomTitle");
     }
+
 }

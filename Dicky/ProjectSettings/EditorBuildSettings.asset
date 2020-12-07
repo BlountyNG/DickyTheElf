@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Game/Rooms/NGLogin.unity
+    path: Assets/Game/Rooms/NGLogin/NGLogin.unity
     guid: 6111aa01184ee174a955bc9aaff6132f
   - enabled: 1
     path: Assets/Game/Rooms/Title/SceneRoomTitle.unity
