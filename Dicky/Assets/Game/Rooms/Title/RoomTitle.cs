@@ -49,11 +49,9 @@ public class RoomTitle : RoomScript<RoomTitle>
 		// Turn on the "new game" prop and fade it in
 		Prop("New").Enable();
 		yield return Prop("New").Fade(0,1,1.0f);
-		
+
 		// This is the point the game will skip to if ESC is pressed
 		E.EndCutscene();
-		
-		GameObject.Find("NGHelper").GetComponent<NGHelper>().unlockMedal(61339);
 	}
 
 
