@@ -22,7 +22,7 @@ MonoBehaviour:
   m_compression: 0
   m_crunchedCompression: 0
   m_sourcePSD: ../../DickyArt/Dicky.aseprite
-  m_sourceDirectory: ..\..\DickyArt/Export
+  m_sourceDirectory: C:\Users\conno\Desktop
   m_deleteImportedPngs: 1
   m_spriteDirectory: Sprites
   m_gui: 0

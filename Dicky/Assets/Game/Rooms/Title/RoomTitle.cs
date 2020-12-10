@@ -19,8 +19,7 @@ public class RoomTitle : RoomScript<RoomTitle>
 		Audio.PlayMusic("SoundRetro Traditional Theme", 1, 3f);
 		
 		
-		//Player Footstep sound
-		C.Player.FootstepSound = "SoundFootsteps_Casual_Earth_01";
+		
 	}
 
 	public IEnumerator OnEnterRoomAfterFade()
@@ -36,7 +35,12 @@ public class RoomTitle : RoomScript<RoomTitle>
 		Prop("Title").Visible = true;
 		yield return Prop("Title").Fade(0,1,1.0f);
 		
-		yield return E.Wait(0.5f);
+		
+		
+		// Turn on the "new game" prop and fade it in
+		Prop("New").Enable();
+		yield return Prop("New").Fade(0,1,1.0f);
+		
 		
 		// Check if we have any save games. If so, turn on the "continue" prop.
 		if (  E.GetSaveSlotData().Count > 0 )
@@ -46,10 +50,8 @@ public class RoomTitle : RoomScript<RoomTitle>
 			Prop("Continue").FadeBG(0,1,1.0f);		
 		}
 		
-		// Turn on the "new game" prop and fade it in
-		Prop("New").Enable();
-		yield return Prop("New").Fade(0,1,1.0f);
-
+		
+		
 		// This is the point the game will skip to if ESC is pressed
 		E.EndCutscene();
 	}
