@@ -51,8 +51,8 @@ MonoBehaviour:
   m_data:
     m_description: Dicky
     m_cursor: 
-    m_room: Title
-    m_position: {x: 100, y: -60}
+    m_room: Elevator
+    m_position: {x: 0, y: 0}
     m_faceDirection: 1
     m_clickable: 0
     m_visible: 1
@@ -63,27 +63,26 @@ MonoBehaviour:
     m_turnBeforeFacing: 1
     m_turnSpeedFPS: 12
     m_adjustSpeedWithScaling: 1
-    m_textColour: {r: 1, g: 1, b: 1, a: 1}
-    m_animIdle: IdleR
-    m_animWalk: WalkR
-    m_animTalk: TalkR
+    m_textColour: {r: 1, g: 0, b: 0, a: 1}
+    m_animIdle: Idle
+    m_animWalk: Walk
+    m_animTalk: 
     m_animMouth: 
     m_useRegionTinting: 1
     m_useRegionScaling: 1
     m_LipSyncEnabled: 0
     m_footstepSound: 
-    m_baseline: -35
-    m_walkToPoint: {x: 0, y: 0}
-    m_lookAtPoint: {x: 0, y: 0}
+    m_baseline: -12
+    m_walkToPoint: {x: -3, y: -12}
+    m_lookAtPoint: {x: -3, y: -12}
     m_scriptName: Dicky
     m_scriptClass: CharacterDicky
   m_clickableColliders: []
   m_turnAnims: []
   m_transitionAnims: []
   m_animations:
-  - {fileID: 7400000, guid: 192cb63b546bcfe43b62c8002f040709, type: 2}
-  - {fileID: 7400000, guid: f531323d47e759e409f190fdaacd8f10, type: 2}
-  - {fileID: 7400000, guid: a89dab0d7023d6d44b7537aa70d9d071, type: 2}
+  - {fileID: 7400000, guid: 4b368d7fe5a375b4b867f2dba0e08155, type: 2}
+  - {fileID: 7400000, guid: e1f8f8a7c4b63dc47bbade7024574c74, type: 2}
 --- !u!60 &6255060287017155218
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -101,7 +100,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 64, y: 80}
+    oldSize: {x: 32, y: 32}
     newSize: {x: 64, y: 80}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -151,10 +150,10 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 10
+  m_SortingOrder: 120
   m_Sprite: {fileID: 21300000, guid: b2ef543d0af17bf41a1d42c526ef69c2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 64, y: 80}
@@ -177,7 +176,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_tint: {r: 1, g: 1, b: 1, a: 0}
   m_outline: {r: 1, g: 1, b: 1, a: 0}
-  m_offset: {x: 0, y: 30}
+  m_offset: {x: 0, y: 0}
   m_shaderOverride: {fileID: 0}
 --- !u!95 &1448167285160445442
 Animator:

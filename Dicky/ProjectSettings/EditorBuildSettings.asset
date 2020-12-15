@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Game/Rooms/MailRoom/SceneRoomMailRoom.unity
     guid: e6de06bbe04c0464591ed57e77b00b92
+  - enabled: 1
+    path: Assets/Game/Rooms/Elevator/SceneRoomElevator.unity
+    guid: 3dd3735c02d85b344887746b76d4286b
   m_configObjects: {}

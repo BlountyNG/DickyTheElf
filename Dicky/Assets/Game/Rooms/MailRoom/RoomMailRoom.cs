@@ -13,8 +13,5 @@ public class RoomMailRoom : RoomScript<RoomMailRoom>
 
 	public void OnEnterRoom()
 	{
-		
-		//Player Footstep sound
-		C.Player.FootstepSound = "SoundFootsteps_Casual_Earth_01";
 	}
 }

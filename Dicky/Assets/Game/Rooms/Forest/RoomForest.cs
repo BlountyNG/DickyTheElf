@@ -187,4 +187,20 @@ public class RoomForest : RoomScript<RoomForest>
 
 		yield return E.Break;
 	}
+
+	public IEnumerator UpdateBlocking()
+	{
+
+		yield return E.Break;
+	}
+
+	public void Update()
+	{
+	}
+
+	public IEnumerator OnAnyClick()
+	{
+
+		yield return E.Break;
+	}
 }

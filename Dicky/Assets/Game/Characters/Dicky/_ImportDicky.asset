@@ -13,15 +13,18 @@ MonoBehaviour:
   m_Name: _ImportDicky
   m_EditorClassIdentifier: 
   m_animations:
-  - m_name: WalkR
+  - m_name: IdleR
     m_firstFrame: 1
+    m_length: 1
+  - m_name: WalkR
+    m_firstFrame: 2
     m_length: 1
   m_packingTag: 
   m_pixelsPerUnit: 1
   m_filterMode: 0
   m_compression: 0
   m_crunchedCompression: 0
-  m_sourcePSD: ../../DickyArt/Dicky.aseprite
+  m_sourcePSD: ../../DickyArt/dicky2.aseprite
   m_sourceDirectory: C:\Users\conno\Desktop
   m_deleteImportedPngs: 1
   m_spriteDirectory: Sprites
