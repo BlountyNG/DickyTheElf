@@ -327,7 +327,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.5137255, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.08018869, b: 0.08018869, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -359,7 +359,7 @@ MonoBehaviour:
   m_mouseEdgeDistanceHide: {x: 0.65, y: 25}
   m_edgeX: 0
   m_edgeY: 1
-  m_pauseWhenVisible: 1
+  m_pauseWhenVisible: 0
   m_dropDownDistance: 17
   m_curveIn:
     serializedVersion: 2

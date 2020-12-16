@@ -19,12 +19,6 @@ public class RoomElevator : RoomScript<RoomElevator>
 		
 		//Set position for entry walk
 		C.Player.SetPosition(Point("Enter1"));
-		
-		//Music
-		Audio.PlayMusic("SoundCool Style Carols", 2f);
-		
-		//Add Coffee
-		I.Bucket.Add();
 	}
 
 	public IEnumerator OnWalkTo()
@@ -62,29 +56,9 @@ public class RoomElevator : RoomScript<RoomElevator>
 		//Walk to panel
 		yield return C.Player.WalkTo( E.GetMousePosition() );
 		
-		
-		//Bell Sound
-		Audio.Play("Sound514864__matrixxx__elevator-ping-03");
-		
-		//Door Pause
-		yield return E.Wait(1);
-		
 		// Show the elevator doors
 		Prop("ElevatorClosed").Visible = true;
 		Prop("ElevatorOpen").Visible = false;
-		
-		//Walk to center
-		yield return C.Dicky.WalkTo(Point("Elevator1"));
-		
-		//Room Change Pause
-		yield return E.Wait(3);
-		
-		//Elevator Sound
-		Audio.Play("Sound381577__midfag__engine-medium");
-		
-		// Move the player to the room
-		C.Player.Room = R.MailRoom;
-		
 		yield return E.Break;
 	}
 }

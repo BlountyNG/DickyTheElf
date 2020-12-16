@@ -54,7 +54,7 @@ MonoBehaviour:
     m_room: Elevator
     m_position: {x: 0, y: 0}
     m_faceDirection: 1
-    m_clickable: 1
+    m_clickable: 0
     m_visible: 1
     m_moveable: 1
     m_inventory: []
@@ -63,7 +63,7 @@ MonoBehaviour:
     m_turnBeforeFacing: 1
     m_turnSpeedFPS: 12
     m_adjustSpeedWithScaling: 1
-    m_textColour: {r: 0, g: 0.5137255, b: 0, a: 1}
+    m_textColour: {r: 1, g: 0, b: 0, a: 1}
     m_animIdle: Idle
     m_animWalk: Walk
     m_animTalk: Idle
@@ -109,11 +109,10 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -7.3617563, y: -15.088032}
-      - {x: -6.79642, y: 6.231085}
-      - {x: 2.6506176, y: 7.361763}
-      - {x: 4.7612123, y: 3.0922298}
-      - {x: 3.2159538, y: -15.088034}
+    - - {x: -10, y: -10}
+      - {x: -10, y: 10}
+      - {x: 10, y: 10}
+      - {x: 10, y: -10}
 --- !u!212 &8302627607107180503
 SpriteRenderer:
   m_ObjectHideFlags: 0
