@@ -87,4 +87,10 @@ public class RoomElevator : RoomScript<RoomElevator>
 		
 		yield return E.Break;
 	}
+
+	public IEnumerator OnUseInvHotspotPanel( IHotspot hotspot, IInventory item )
+	{
+
+		yield return E.Break;
+	}
 }
