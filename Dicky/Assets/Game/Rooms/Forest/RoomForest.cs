@@ -203,4 +203,10 @@ public class RoomForest : RoomScript<RoomForest>
 
 		yield return E.Break;
 	}
+
+	public IEnumerator OnLookAtHotspotCave( IHotspot hotspot )
+	{
+
+		yield return E.Break;
+	}
 }

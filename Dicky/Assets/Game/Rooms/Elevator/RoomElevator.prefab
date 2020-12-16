@@ -167,7 +167,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4840667308308297562}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 10, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 620113002294748990}
@@ -198,10 +198,11 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -29.796085, y: -30.871956}
-      - {x: -19.25252, y: -19.694118}
-      - {x: 19.252508, y: -20.554817}
-      - {x: 30.871956, y: -31.087133}
+    - - {x: 9.470824, y: -28.656254}
+      - {x: -19.549002, y: -28.636456}
+      - {x: -16.501137, y: -22.789425}
+      - {x: 16.624687, y: -22.618355}
+      - {x: 19.112524, y: -28.507711}
 --- !u!114 &5870909421892705347
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -214,6 +215,87 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 727988640b9224246aff8ffe86dcaedd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &5162802440449863761
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1375423398291715143}
+  - component: {fileID: 8509116793537517576}
+  - component: {fileID: 6325752646506697270}
+  m_Layer: 0
+  m_Name: HotspotPanel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1375423398291715143
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5162802440449863761}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 620113002294748990}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8509116793537517576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5162802440449863761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b0df7c458d97544b909b49c6789dea5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_data:
+    m_description: ElevatorPanel
+    m_baseline: 4
+    m_clickable: 1
+    m_walkToPoint: {x: 14, y: -8}
+    m_lookAtPoint: {x: 14, y: 1}
+    m_cursor: 
+    m_scriptName: Panel
+--- !u!60 &6325752646506697270
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5162802440449863761}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 10.202824, y: -9.705069}
+      - {x: 10.210773, y: 3.6176538}
+      - {x: 17.535534, y: 3.617653}
+      - {x: 17.520763, y: -9.852534}
 --- !u!1 &6373138880354343726
 GameObject:
   m_ObjectHideFlags: 0
@@ -245,6 +327,7 @@ Transform:
   - {fileID: 3042222070028589216}
   - {fileID: 1218891145047713544}
   - {fileID: 8439667712092076579}
+  - {fileID: 1375423398291715143}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -276,8 +359,11 @@ MonoBehaviour:
     m_sceneName: SceneRoomElevator
     m_points:
     - m_name: Elevator1
-      m_position: {x: -2, y: -28}
-  m_hotspotComponents: []
+      m_position: {x: 0, y: -25}
+    - m_name: Enter1
+      m_position: {x: 79, y: -30}
+  m_hotspotComponents:
+  - {fileID: 8509116793537517576}
   m_propComponents:
   - {fileID: 2434431670856898492}
   - {fileID: 1633902096223979461}
