@@ -13,11 +13,17 @@ MonoBehaviour:
   m_Name: _ImportElevator
   m_EditorClassIdentifier: 
   m_animations:
-  - m_name: Elevator
+  - m_name: ElevatorClosed
     m_firstFrame: 1
     m_length: 1
-  - m_name: Background
+  - m_name: ElevatorOpen
     m_firstFrame: 2
+    m_length: 1
+  - m_name: BackgroundOpen
+    m_firstFrame: 3
+    m_length: 1
+  - m_name: BackgroundClosed
+    m_firstFrame: 4
     m_length: 1
   m_packingTag: 
   m_pixelsPerUnit: 1

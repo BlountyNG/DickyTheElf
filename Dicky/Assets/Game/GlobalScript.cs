@@ -36,6 +36,7 @@ public partial class GlobalScript : GlobalScriptBase<GlobalScript>
 	#region Global Game Functions
 	
 	/// Called when game first starts
+	
 	public void OnGameStart()
 	{     
 	} 

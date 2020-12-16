@@ -15,6 +15,11 @@ public class RoomTitle : RoomScript<RoomTitle>
 		G.InfoBar.Clickable = false;
 		G.Inventory.Clickable = false;
 		
+		//Hide toolbar for web games
+		G.Toolbar.Visible = false;
+		G.Toolbar.Clickable = false;
+		
+		
 		// Play Intro Music
 		Audio.PlayMusic("SoundRetro Traditional Theme", 1, 3f);
 		
@@ -59,7 +64,6 @@ public class RoomTitle : RoomScript<RoomTitle>
 
 	public IEnumerator OnInteractPropNew( Prop prop )
 	{
-		
 		// Turn on the inventory and info bar now that we're starting a game
 		G.InfoBar.Visible = true;
 		G.Inventory.Visible = true;
