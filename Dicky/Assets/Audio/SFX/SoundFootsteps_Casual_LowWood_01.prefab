@@ -55,7 +55,8 @@ MonoBehaviour:
     m_max: 1
     m_hasMax: 0
     m_hasValue: 0
-  m_alsoPlay: {fileID: 0}
+  m_alsoPlay: {fileID: 5470902914070292947, guid: 07fadb4f6a55c6d469ccc8ea4d9b2a8c,
+    type: 3}
   m_chance: 1
   m_startDelay:
     m_min: 0

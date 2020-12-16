@@ -53,7 +53,7 @@ MonoBehaviour:
     m_animationNonClickable: Idle
     m_animationUseInv: UseInv
     m_animationOverGui: Idle
-    m_inventoryOutlineColor: {r: 1, g: 1, b: 1, a: 1}
+    m_inventoryOutlineColor: {r: 0.6745098, g: 0.19607845, b: 0.19607845, a: 1}
     m_hideWhenBlocking: 1
   m_inventoryOverrideAnims:
   - Left
