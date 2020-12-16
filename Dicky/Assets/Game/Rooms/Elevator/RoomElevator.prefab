@@ -766,7 +766,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_data:
-    m_description: Panel
+    m_description: Elevator Panel
     m_baseline: 0
     m_clickable: 1
     m_walkToPoint: {x: 14, y: -22}

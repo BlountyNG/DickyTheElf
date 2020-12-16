@@ -14,7 +14,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Game/Rooms/Forest/SceneRoomForest.unity
     guid: 1121794b7ab7e6f44a29b3e8be8fbb08
-  - enabled: 1
+  - enabled: 0
     path: Assets/Game/Rooms/MailRoom/SceneRoomMailRoom.unity
     guid: e6de06bbe04c0464591ed57e77b00b92
   - enabled: 1
