@@ -7,7 +7,8 @@ public class RoomTitle : RoomScript<RoomTitle>
 {
 	public void OnEnterRoom()
 	{
-		
+		//Unlock game start medal
+		GameObject.Find("NGHelper").GetComponent<NGHelper>().unlockMedal(61339);
 		
 		// Hide the inventory and info bar in the title
 		G.InfoBar.Visible = false;

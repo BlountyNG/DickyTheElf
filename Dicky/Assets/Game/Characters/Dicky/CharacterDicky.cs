@@ -15,7 +15,20 @@ public class CharacterDicky : CharacterScript<CharacterDicky>
 
 	public IEnumerator OnInteract()
 	{
+		/*if ( I.Bucket.Active )
+				yield return C.Display("You drink the coffee");
+			//Unlock Coffee Drinker medal
+			GameObject.Find("NGHelper").GetComponent<NGHelper>().unlockMedal(61557);
+			I.Bucket.Remove();
+		else
 		yield return C.Dicky.Say("Hey quit it!");
+		*/
+		yield return E.Break;
+	}
+
+	public IEnumerator OnUseInv( IInventory thisItem )
+	{
+
 		yield return E.Break;
 	}
 }
