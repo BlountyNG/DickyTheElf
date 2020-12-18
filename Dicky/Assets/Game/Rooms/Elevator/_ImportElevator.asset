@@ -13,25 +13,25 @@ MonoBehaviour:
   m_Name: _ImportElevator
   m_EditorClassIdentifier: 
   m_animations:
-  - m_name: ElevatorClosed
+  - m_name: ElevatorInterior
     m_firstFrame: 1
     m_length: 1
-  - m_name: ElevatorOpen
+  - m_name: DoorsClose
     m_firstFrame: 2
-    m_length: 1
-  - m_name: BackgroundOpen
-    m_firstFrame: 3
-    m_length: 1
-  - m_name: BackgroundClosed
+    m_length: 2
+  - m_name: Elevator Exterior
     m_firstFrame: 4
+    m_length: 1
+  - m_name: ElevatorOpenings
+    m_firstFrame: 5
     m_length: 1
   m_packingTag: 
   m_pixelsPerUnit: 1
   m_filterMode: 0
   m_compression: 0
   m_crunchedCompression: 0
-  m_sourcePSD: ../../DickyArt/Elevator.aseprite
-  m_sourceDirectory: C:\Users\conno\Desktop
+  m_sourcePSD: ../../DickyArt/Elevator2.aseprite
+  m_sourceDirectory: ..\..\DickyArt/Export
   m_deleteImportedPngs: 1
   m_spriteDirectory: Sprites
   m_gui: 0

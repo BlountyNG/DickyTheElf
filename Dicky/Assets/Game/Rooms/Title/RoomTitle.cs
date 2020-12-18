@@ -23,9 +23,6 @@ public class RoomTitle : RoomScript<RoomTitle>
 		
 		// Play Intro Music
 		Audio.PlayMusic("SoundRetro Traditional Theme", 1, 3f);
-		
-		
-		
 	}
 
 	public IEnumerator OnEnterRoomAfterFade()

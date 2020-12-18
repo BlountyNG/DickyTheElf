@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a16e9f9c6db14b418901a66d60f8d1b, type: 3}
+  m_Name: _ImportStaffRoom
+  m_EditorClassIdentifier: 
+  m_animations:
+  - m_name: Background
+    m_firstFrame: 1
+    m_length: 1
+  - m_name: Banner
+    m_firstFrame: 2
+    m_length: 1
+  - m_name: Vending Machine
+    m_firstFrame: 3
+    m_length: 1
+  - m_name: Table
+    m_firstFrame: 4
+    m_length: 1
+  - m_name: Chairs
+    m_firstFrame: 5
+    m_length: 1
+  - m_name: Lockers
+    m_firstFrame: 6
+    m_length: 2
+  - m_name: Lights
+    m_firstFrame: 8
+    m_length: 1
+  - m_name: Cobweb
+    m_firstFrame: 9
+    m_length: 1
+  - m_name: MainLight
+    m_firstFrame: 10
+    m_length: 1
+  - m_name: OpenLocker
+    m_firstFrame: 11
+    m_length: 1
+  m_packingTag: 
+  m_pixelsPerUnit: 1
+  m_filterMode: 0
+  m_compression: 0
+  m_crunchedCompression: 0
+  m_sourcePSD: ../../DickyArt/LockerRoom.aseprite
+  m_sourceDirectory: C:\Users\conno\Desktop
+  m_deleteImportedPngs: 1
+  m_spriteDirectory: Sprites
+  m_gui: 0

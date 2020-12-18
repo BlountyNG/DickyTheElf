@@ -14,8 +14,6 @@ public class RoomElevator : RoomScript<RoomElevator>
 		G.Toolbar.Visible = false;
 		G.Toolbar.Clickable = false;
 		
-		// Hide the elevator doors
-		Prop("ElevatorClosed").Visible = false;
 		
 		//Set position for entry walk
 		C.Player.SetPosition(Point("Enter1"));
@@ -25,6 +23,9 @@ public class RoomElevator : RoomScript<RoomElevator>
 		
 		//Add Coffee
 		I.Bucket.Add();
+		
+		//Hide Elevator Doors
+		Prop("ElevatorClosed").Visible = false;
 	}
 
 	public IEnumerator OnWalkTo()
@@ -69,12 +70,12 @@ public class RoomElevator : RoomScript<RoomElevator>
 		//Door Pause
 		yield return E.Wait(1);
 		
-		// Show the elevator doors
-		Prop("ElevatorClosed").Visible = true;
-		Prop("ElevatorOpen").Visible = false;
 		
 		//Walk to center
 		yield return C.Dicky.WalkTo(Point("Elevator1"));
+		
+		//Show Elevator Doors
+		Prop("ElevatorClosed").Visible = true;
 		
 		//Room Change Pause
 		yield return E.Wait(3);
@@ -83,7 +84,7 @@ public class RoomElevator : RoomScript<RoomElevator>
 		Audio.Play("Sound381577__midfag__engine-medium");
 		
 		// Move the player to the room
-		C.Player.Room = R.MailRoom;
+		C.Player.Room = R.StaffRoom;
 		
 		yield return E.Break;
 	}
@@ -91,6 +92,20 @@ public class RoomElevator : RoomScript<RoomElevator>
 	public IEnumerator OnUseInvHotspotPanel( IHotspot hotspot, IInventory item )
 	{
 
+		yield return E.Break;
+	}
+
+	public IEnumerator OnEnterRegionPurpleRoom( IRegion region, ICharacter character )
+	{
+		yield return C.Dicky.Say("I can't go home, I have work to do");
+		yield return C.Player.WalkTo(Point("Elevator1"));
+		yield return E.Break;
+	}
+
+	public IEnumerator OnEnterRegionBlueRoom( IRegion region, ICharacter character )
+	{
+		yield return C.Dicky.Say("This isn't the floor I work on");
+		yield return C.Player.WalkTo(Point("Elevator1"));
 		yield return E.Break;
 	}
 }

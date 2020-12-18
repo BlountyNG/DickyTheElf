@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Game/Rooms/Elevator/SceneRoomElevator.unity
     guid: 3dd3735c02d85b344887746b76d4286b
+  - enabled: 1
+    path: Assets/Game/Rooms/StaffRoom/SceneRoomStaffRoom.unity
+    guid: e945509dfe26b2240a7ca0dc199d04d3
   m_configObjects: {}
