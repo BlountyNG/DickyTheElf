@@ -37,4 +37,13 @@ public class RoomStaffRoom : RoomScript<RoomStaffRoom>
 
 		yield return E.Break;
 	}
+
+	public IEnumerator OnLookAtPropBanner( IProp prop )
+	{
+		yield return C.Dicky.Say("It's the Christmas Banner");
+		yield return C.Dicky.Say("Still up from last Christmas");
+		yield return C.Dicky.Say("and the Christmas before");
+		
+		yield return E.Break;
+	}
 }

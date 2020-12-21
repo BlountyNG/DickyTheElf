@@ -69,8 +69,8 @@ MonoBehaviour:
     y: 0
     width: 345
     height: 947
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 102, y: 121}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -98,10 +98,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 777, y: 342}
-  m_MaxSize: {x: 16002, y: 8042}
+  m_MinSize: {x: 779, y: 342}
+  m_MaxSize: {x: 16004, y: 8042}
   vertical: 0
-  controlID: 228
+  controlID: 187
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -247,7 +247,7 @@ MonoBehaviour:
   m_MinSize: {x: 402, y: 342}
   m_MaxSize: {x: 8002, y: 8042}
   vertical: 1
-  controlID: 86
+  controlID: 188
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -272,7 +272,7 @@ MonoBehaviour:
   m_MinSize: {x: 402, y: 221}
   m_MaxSize: {x: 8002, y: 4021}
   vertical: 0
-  controlID: 87
+  controlID: 189
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -292,8 +292,8 @@ MonoBehaviour:
     y: 0
     width: 756
     height: 425
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -647,21 +647,21 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 3}
     m_SelectedIDs: 6c570000
     m_LastClickedID: 22380
-    m_ExpandedIDs: 00000000e6400000fe40000074410000bc4100003c4200006c57000000ca9a3b
+    m_ExpandedIDs: 000000006a4200006c4200006e420000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Elevator
-      m_OriginalName: Elevator
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 16958
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 6}
     m_SearchString: 
@@ -675,7 +675,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000e6400000
+    m_ExpandedIDs: 000000006a4200006c4200006e420000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -760,23 +760,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: f858feff
-      m_LastClickedID: -108296
-      m_ExpandedIDs: 2e59feff4659feff6859fefff85ffeffbe64feff6e65feff5070feffc2adfeffc8adfeff02aefeffa8b7feff8abbfefffcd0feff36d1feffdcd1feffe0ddfeff90defeffbce0feffb0e1fefface8feffe0fbfeff1cfcfeff7c02ffffb602ffff9e04ffffea04ffff0419ffff3e19ffffe43affff1e3bffffcc3bffff9c3cffffae48ffff7649ffff3875ffffe475ffff907effff6e85ffffdea5ffff1aa6ffff28b2ffff64b2ffffeab2ffffe4f9ffff36faffff
+      m_SelectedIDs: f2f7ffff
+      m_LastClickedID: -2062
+      m_ExpandedIDs: 0ef8ffff60f8ffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: CharacterDicky
-        m_OriginalName: CharacterDicky
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -105304
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 5}
       m_SearchString: 
@@ -822,9 +822,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -5.7130075, y: -7.967353, z: -14.997878}
+    m_Target: {x: 7.4456983, y: -0.58014745, z: -18.539062}
     speed: 2
-    m_Value: {x: -5.7130075, y: -7.967353, z: -14.997878}
+    m_Value: {x: 7.4456983, y: -0.58014745, z: -18.539062}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -874,9 +874,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 98.48531
+    m_Target: 54.12717
     speed: 2
-    m_Value: 103.125984
+    m_Value: 54.12717
   m_Ortho:
     m_Target: 1
     speed: 2
