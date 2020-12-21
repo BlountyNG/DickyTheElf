@@ -60,9 +60,8 @@ public class RoomElevator : RoomScript<RoomElevator>
 
 	public IEnumerator OnInteractHotspotPanel( IHotspot hotspot )
 	{
-		//Walk to panel
-		yield return C.Player.WalkTo( E.GetMousePosition() );
-		
+		yield return C.WalkToClicked();
+		yield return C.FaceClicked();
 		
 		//Bell Sound
 		Audio.Play("Sound514864__matrixxx__elevator-ping-03");

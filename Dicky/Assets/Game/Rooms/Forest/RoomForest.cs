@@ -209,4 +209,8 @@ public class RoomForest : RoomScript<RoomForest>
 
 		yield return E.Break;
 	}
+
+	public void OnPostRestore( int version )
+	{
+	}
 }

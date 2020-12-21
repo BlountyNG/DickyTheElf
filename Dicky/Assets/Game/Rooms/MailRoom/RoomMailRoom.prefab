@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3820292313263454015
+--- !u!1 &4349711025268236639
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,25 +8,25 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8856791486271711066}
-  - component: {fileID: 7080580890089493878}
-  - component: {fileID: 2507675867145169374}
-  - component: {fileID: 4723340352443289572}
-  - component: {fileID: 4489665271836389321}
+  - component: {fileID: 6345451532726981261}
+  - component: {fileID: 8472517298461447715}
+  - component: {fileID: 6672892472055165821}
+  - component: {fileID: 1988294811829390919}
+  - component: {fileID: 4919170820047423010}
   m_Layer: 0
-  m_Name: PropBack
+  m_Name: PropMailBG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8856791486271711066
+--- !u!4 &6345451532726981261
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3820292313263454015}
+  m_GameObject: {fileID: 4349711025268236639}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -34,39 +34,39 @@ Transform:
   m_Father: {fileID: 6905684059745977080}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7080580890089493878
+--- !u!114 &8472517298461447715
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3820292313263454015}
+  m_GameObject: {fileID: 4349711025268236639}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aadc54c66336ab7419b42be46b28c68b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_data:
-    m_description: Back
+    m_description: MailBG
     m_position: {x: 0, y: 0}
     m_baseline: 0
     m_visible: 1
     m_clickable: 0
     m_walkToPoint: {x: 0, y: 0}
     m_lookAtPoint: {x: 0, y: 0}
-    m_animation: Back
+    m_animation: MailBG
     m_cursor: 
-    m_scriptName: Back
+    m_scriptName: MailBG
   m_parallaxDepth: 0
   m_parallaxAlignment: {x: 0, y: 0}
---- !u!95 &2507675867145169374
+--- !u!95 &6672892472055165821
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3820292313263454015}
+  m_GameObject: {fileID: 4349711025268236639}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 0}
@@ -78,26 +78,26 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &4723340352443289572
+--- !u!114 &1988294811829390919
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3820292313263454015}
+  m_GameObject: {fileID: 4349711025268236639}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 89a8ca009b14008429f621808bba2086, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_defaultAnim: {fileID: 0}
---- !u!212 &4489665271836389321
+--- !u!212 &4919170820047423010
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3820292313263454015}
+  m_GameObject: {fileID: 4349711025268236639}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -135,7 +135,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 320, y: 180}
+  m_Size: {x: 160, y: 90}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -247,7 +247,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6246673866079316723}
-  - {fileID: 8856791486271711066}
+  - {fileID: 6345451532726981261}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -266,23 +266,23 @@ MonoBehaviour:
   m_data:
     m_description: MailRoom
     m_playerVisible: 1
-    m_verticalResolution: 0
+    m_verticalResolution: 90
     m_activeWalkableArea: 0
     m_bounds:
-      m_min: {x: -160, y: 0}
-      m_max: {x: 160, y: 0}
+      m_min: {x: -160, y: -90}
+      m_max: {x: 160, y: 90}
     m_scrollBounds:
-      m_min: {x: 0, y: 0}
-      m_max: {x: 0, y: 0}
+      m_min: {x: -80, y: -57}
+      m_max: {x: 76.5, y: -6.5}
     m_shortName: MailRoom
     m_scriptClass: RoomMailRoom
     m_sceneName: SceneRoomMailRoom
     m_points:
     - m_name: EntryWalk
-      m_position: {x: 0, y: -50}
+      m_position: {x: 114, y: -50}
   m_hotspotComponents: []
   m_propComponents:
-  - {fileID: 7080580890089493878}
+  - {fileID: 8472517298461447715}
   m_regionComponents: []
   m_walkableAreas:
   - {fileID: 2581494354703643083}

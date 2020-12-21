@@ -97,7 +97,7 @@ public class RoomStaffRoom : RoomScript<RoomStaffRoom>
 		yield return E.FadeOut(1);
 		yield return E.FadeIn(1);
 		yield return C.Dicky.Say("Ah it feels good to be in uniform again");
-		
+		GlobalScript.Script.m_changedClothes = true;
 		yield return E.Break;
 	}
 
@@ -134,7 +134,7 @@ public class RoomStaffRoom : RoomScript<RoomStaffRoom>
 
 	public IEnumerator OnEnterRegionToMailRoom( IRegion region, ICharacter character )
 	{
-		if (Prop("OpenLocker").UseCount > 0)
+		if (GlobalScript.Script.m_changedClothes)
 			{
 			yield return C.Dicky.Say("Oh boy, work time");
 			// Move the player to the room
