@@ -35,7 +35,9 @@ public class RoomStaffRoom : RoomScript<RoomStaffRoom>
 
 	public IEnumerator OnInteractPropBanner( IProp prop )
 	{
-
+		yield return C.FaceClicked();
+		yield return C.WalkToClicked();
+		yield return C.Dicky.Say("I can't reach it");
 		yield return E.Break;
 	}
 
@@ -59,10 +61,32 @@ public class RoomStaffRoom : RoomScript<RoomStaffRoom>
 	{
 		yield return C.WalkToClicked();
 		yield return C.FaceClicked();
+		yield return C.Dicky.Say("Ok time to put in my code");
+		yield return C.Dicky.Say("What was it again...");
+		
+		if (Prop("VendingMachine").UseCount > 0)
+		{
+		yield return C.Dicky.Say("Oh right");
+		yield return C.Dicky.Say("0");
+		yield return E.WaitSkip(1.5f);
+		yield return C.Dicky.Say("0");
+		yield return E.WaitSkip(1.5f);
+		yield return C.Dicky.Say("3");
+		yield return E.WaitSkip(1.5f);
+		yield return C.Dicky.Say("9");
+		yield return C.Dicky.Say(" Done");
 		Prop("OpenLocker").Visible = true;
 		Prop("OpenLocker").Clickable = true;
 		
 		Prop("Lockers").Clickable = false;
+		}
+		
+		else
+		{
+		yield return C.Dicky.Say("It's the same price as my favourite snack from the vending machine");
+		yield return C.Dicky.Say("If only I could remember what that was");
+		yield return C.Dicky.Say("Darn my small elf memory");
+		}
 		yield return E.Break;
 	}
 
@@ -112,6 +136,7 @@ public class RoomStaffRoom : RoomScript<RoomStaffRoom>
 	{
 		if (Prop("OpenLocker").UseCount > 0)
 			{
+			yield return C.Dicky.Say("Oh boy, work time");
 			// Move the player to the room
 			C.Player.Room = R.MailRoom;
 			}
@@ -140,6 +165,57 @@ public class RoomStaffRoom : RoomScript<RoomStaffRoom>
 	}
 
 	public IEnumerator OnInteractHotspotSockets( IHotspot hotspot )
+	{
+
+		yield return E.Break;
+	}
+
+	public IEnumerator OnLookAtPropVendingMachine( IProp prop )
+	{
+		yield return C.FaceClicked();
+		yield return C.Dicky.Say("Ooh snacks!");
+		yield return E.Break;
+	}
+
+	public IEnumerator OnInteractPropChairs( IProp prop )
+	{
+		yield return C.FaceClicked();
+		yield return C.Dicky.Say("It's not break time yet");
+		yield return E.Break;
+	}
+
+	public IEnumerator OnInteractPropLights( IProp prop )
+	{
+		yield return C.FaceClicked();
+		yield return C.WalkToClicked();
+		yield return C.Dicky.Say("I can't reach them");
+		yield return C.Dicky.Say("They don't work anyway");
+		yield return E.Break;
+	}
+
+	public IEnumerator OnInteractPropVendingMachine( IProp prop )
+	{
+		yield return C.WalkToClicked();
+		yield return C.FaceClicked();
+		yield return C.Dicky.Say("This vending machine sells my favourite snack");
+		yield return C.Dicky.Say("Packets of sugar");
+		yield return C.Dicky.Say("They cost 39 elfies");
+		yield return C.Player.FaceDown();
+		yield return C.Dicky.Say("That's the currency Santa pays us in");
+		yield return C.Dicky.Say("It's only legal tender in the North Pole");
+		
+		yield return E.Break;
+	}
+
+	public IEnumerator OnInteractPropTable( IProp prop )
+	{
+		yield return C.WalkToClicked();
+		yield return C.FaceClicked();
+		yield return C.Dicky.Say("Sticky");
+		yield return E.Break;
+	}
+
+	public IEnumerator OnExitRegionToMailRoom( IRegion region, ICharacter character )
 	{
 
 		yield return E.Break;

@@ -13,19 +13,16 @@ MonoBehaviour:
   m_Name: RoomTitleImporter
   m_EditorClassIdentifier: 
   m_animations:
-  - m_name: Back
-    m_firstFrame: 2
-    m_length: 1
-  - m_name: Title
-    m_firstFrame: 3
+  - m_name: Endbackground
+    m_firstFrame: 1
     m_length: 1
   m_packingTag: RoomTitle
   m_pixelsPerUnit: 1
   m_filterMode: 0
   m_compression: 0
   m_crunchedCompression: 0
-  m_sourcePSD: Art/RoomTitle.ase
-  m_sourceDirectory: Art/Export
+  m_sourcePSD: ../../DickyArt/dickycreditbg.aseprite
+  m_sourceDirectory: ..\..\DickyArt/Export
   m_deleteImportedPngs: 1
   m_spriteDirectory: Sprites
   m_gui: 0
