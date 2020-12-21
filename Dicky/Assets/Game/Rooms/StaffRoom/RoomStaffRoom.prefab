@@ -52,8 +52,8 @@ MonoBehaviour:
     m_baseline: 0
     m_visible: 1
     m_clickable: 0
-    m_walkToPoint: {x: 0, y: 0}
-    m_lookAtPoint: {x: 0, y: 0}
+    m_walkToPoint: {x: -5, y: -34}
+    m_lookAtPoint: {x: -4, y: 36}
     m_animation: MainLight
     m_cursor: 
     m_scriptName: MainLight
@@ -362,6 +362,87 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &2557771731332744236
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3188119302801771451}
+  - component: {fileID: 723452230363786289}
+  - component: {fileID: 3269966706410986080}
+  m_Layer: 0
+  m_Name: HotspotSockets
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3188119302801771451
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2557771731332744236}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5175229180680801420}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &723452230363786289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2557771731332744236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b0df7c458d97544b909b49c6789dea5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_data:
+    m_description: Sockets
+    m_baseline: 0
+    m_clickable: 1
+    m_walkToPoint: {x: 0, y: 0}
+    m_lookAtPoint: {x: 0, y: 0}
+    m_cursor: 
+    m_scriptName: Sockets
+--- !u!60 &3269966706410986080
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2557771731332744236}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 4.977086, y: -12.925213}
+      - {x: 4.860075, y: -10.00845}
+      - {x: 11.17008, y: -10.00845}
+      - {x: 11.207442, y: -13.145016}
 --- !u!1 &2569961117248456998
 GameObject:
   m_ObjectHideFlags: 0
@@ -415,8 +496,8 @@ MonoBehaviour:
     m_baseline: -27
     m_visible: 1
     m_clickable: 1
-    m_walkToPoint: {x: 0, y: 0}
-    m_lookAtPoint: {x: 0, y: 0}
+    m_walkToPoint: {x: 15, y: -31}
+    m_lookAtPoint: {x: 16, y: -18}
     m_animation: Chairs
     m_cursor: 
     m_scriptName: Chairs
@@ -587,8 +668,8 @@ MonoBehaviour:
     m_baseline: -28
     m_visible: 1
     m_clickable: 1
-    m_walkToPoint: {x: 0, y: 0}
-    m_lookAtPoint: {x: 0, y: 0}
+    m_walkToPoint: {x: 34, y: -32}
+    m_lookAtPoint: {x: 34, y: -15}
     m_animation: Table
     m_cursor: 
     m_scriptName: Table
@@ -765,8 +846,8 @@ MonoBehaviour:
     m_baseline: 0
     m_visible: 1
     m_clickable: 1
-    m_walkToPoint: {x: 0, y: 0}
-    m_lookAtPoint: {x: 0, y: 0}
+    m_walkToPoint: {x: -41, y: -26}
+    m_lookAtPoint: {x: -38, y: -8}
     m_animation: Lockers
     m_cursor: 
     m_scriptName: Lockers
@@ -948,6 +1029,86 @@ PolygonCollider2D:
       - {x: 60.95346, y: -37.690342}
       - {x: 34.80646, y: -39.557156}
       - {x: 6.7962284, y: -37.128357}
+--- !u!1 &3981030256808407104
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 247836138127622345}
+  - component: {fileID: 4847734444466213714}
+  - component: {fileID: 8595213667980255010}
+  m_Layer: 0
+  m_Name: RegionToMailRoom
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &247836138127622345
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3981030256808407104}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5175229180680801420}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4847734444466213714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3981030256808407104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20008c577fbd68147a04948177cd9c5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_data:
+    m_enabled: 1
+    m_walkable: 1
+    m_tint: {r: 1, g: 1, b: 1, a: 0}
+    m_scaleTop: 1
+    m_scaleBottom: 1
+    m_scriptName: ToMailRoom
+--- !u!60 &8595213667980255010
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3981030256808407104}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -81.07127, y: -45.28181}
+      - {x: -82.76465, y: -20.845877}
+      - {x: -66.191956, y: -21.109522}
+      - {x: -78.84669, y: -41.636803}
 --- !u!1 &4198547034223669341
 GameObject:
   m_ObjectHideFlags: 0
@@ -1001,8 +1162,8 @@ MonoBehaviour:
     m_baseline: 52
     m_visible: 1
     m_clickable: 1
-    m_walkToPoint: {x: 0, y: 0}
-    m_lookAtPoint: {x: 0, y: 0}
+    m_walkToPoint: {x: 34, y: -18}
+    m_lookAtPoint: {x: 37, y: 7}
     m_animation: Banner
     m_cursor: 
     m_scriptName: Banner
@@ -1187,8 +1348,8 @@ MonoBehaviour:
     m_baseline: 0
     m_visible: 1
     m_clickable: 1
-    m_walkToPoint: {x: 0, y: 0}
-    m_lookAtPoint: {x: 0, y: 0}
+    m_walkToPoint: {x: -26, y: -28}
+    m_lookAtPoint: {x: -29, y: 17}
     m_animation: Lights
     m_cursor: 
     m_scriptName: Lights
@@ -1361,11 +1522,11 @@ MonoBehaviour:
   m_data:
     m_description: Vending Machine
     m_position: {x: 0, y: 0}
-    m_baseline: -9
+    m_baseline: 0
     m_visible: 1
     m_clickable: 1
-    m_walkToPoint: {x: 0, y: 0}
-    m_lookAtPoint: {x: 0, y: 0}
+    m_walkToPoint: {x: -5, y: -28}
+    m_lookAtPoint: {x: -7, y: 0}
     m_animation: VendingMachine
     m_cursor: 
     m_scriptName: VendingMachine
@@ -1470,7 +1631,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 90
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 41462667c4c069043ae76bac651e19ed, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1520,6 +1681,8 @@ Transform:
   - {fileID: 4147394332616535294}
   - {fileID: 9123261868118133737}
   - {fileID: 639981320659545860}
+  - {fileID: 3188119302801771451}
+  - {fileID: 247836138127622345}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1554,7 +1717,8 @@ MonoBehaviour:
       m_position: {x: 69, y: -29}
     - m_name: Point1
       m_position: {x: 100, y: -34}
-  m_hotspotComponents: []
+  m_hotspotComponents:
+  - {fileID: 723452230363786289}
   m_propComponents:
   - {fileID: 8420441649658631073}
   - {fileID: 4534681536942529101}
@@ -1565,7 +1729,8 @@ MonoBehaviour:
   - {fileID: 3247167901534710805}
   - {fileID: 5807624213116409781}
   - {fileID: 9134334846978853874}
-  m_regionComponents: []
+  m_regionComponents:
+  - {fileID: 4847734444466213714}
   m_walkableAreas:
   - {fileID: 4132516378101075549}
   m_animations:
@@ -1627,13 +1792,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_data:
-    m_description: OpenLocker
+    m_description: Dicky's Locker
     m_position: {x: 0, y: 0}
     m_baseline: 0
     m_visible: 1
     m_clickable: 1
-    m_walkToPoint: {x: 0, y: 0}
-    m_lookAtPoint: {x: 0, y: 0}
+    m_walkToPoint: {x: -44, y: -22}
+    m_lookAtPoint: {x: -44, y: -3}
     m_animation: OpenLocker
     m_cursor: 
     m_scriptName: OpenLocker

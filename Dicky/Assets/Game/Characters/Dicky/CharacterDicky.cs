@@ -15,7 +15,7 @@ public class CharacterDicky : CharacterScript<CharacterDicky>
 
 	public IEnumerator OnInteract()
 	{
-		
+		Camera.Shake(0.05f, 0.1f);
 		yield return C.Dicky.Say("Hey quit it!");
 		
 		

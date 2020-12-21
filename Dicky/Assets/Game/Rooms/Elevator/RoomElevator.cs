@@ -78,10 +78,14 @@ public class RoomElevator : RoomScript<RoomElevator>
 		Prop("ElevatorClosed").Visible = true;
 		
 		//Room Change Pause
-		yield return E.Wait(3);
+		yield return E.Wait(1);
 		
 		//Elevator Sound
 		Audio.Play("Sound381577__midfag__engine-medium");
+		
+		Camera.Shake( 0.2f, 3, 15);
+		
+		yield return E.Wait(2);
 		
 		// Move the player to the room
 		C.Player.Room = R.StaffRoom;
