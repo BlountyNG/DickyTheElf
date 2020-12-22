@@ -27,14 +27,14 @@ public class RoomTitle : RoomScript<RoomTitle>
 		
 		// Play Intro Music
 		Audio.PlayMusic("SoundRetro Traditional Theme", 1, 3f);
-
-
+		
+		
 		//Get Month & Day
 		string sMonth = DateTime.Now.ToString("MM");
 		string sDay = DateTime.Now.ToString("dd");
 		Debug.Log(sMonth);
 		Debug.Log(sDay);
-
+		
 		
 		//Check if Christmas
 		if (sMonth == "12" && sDay == "25")

@@ -28,7 +28,7 @@ public class CharacterDicky : CharacterScript<CharacterDicky>
 		{
 			yield return C.Display("You drink the coffee");
 					//Unlock Coffee Drinker medal
-			GameObject.Find("NGHelper").GetComponent<NGHelper>().unlockMedal(61339);
+			GameObject.Find("NGHelper").GetComponent<NGHelper>().unlockMedal(61557);
 			I.Bucket.Remove();
 		}
 		
