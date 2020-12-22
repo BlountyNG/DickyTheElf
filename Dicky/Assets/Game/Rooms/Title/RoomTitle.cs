@@ -2,9 +2,13 @@ using UnityEngine;
 using System.Collections;
 using PowerScript;
 using PowerTools.Quest;
+using System;
+
 
 public class RoomTitle : RoomScript<RoomTitle>
 {
+	
+	
 	public void OnEnterRoom()
 	{
 		//Unlock game start medal
@@ -23,6 +27,21 @@ public class RoomTitle : RoomScript<RoomTitle>
 		
 		// Play Intro Music
 		Audio.PlayMusic("SoundRetro Traditional Theme", 1, 3f);
+
+
+		//Get Month & Day
+		string sMonth = DateTime.Now.ToString("MM");
+		string sDay = DateTime.Now.ToString("dd");
+		Debug.Log(sMonth);
+		Debug.Log(sDay);
+
+		
+		//Check if Christmas
+		if (sMonth == "12" && sDay == "25")
+		{
+		 GameObject.Find("NGHelper").GetComponent<NGHelper>().unlockMedal(61622);
+		}
+		
 	}
 
 	public IEnumerator OnEnterRoomAfterFade()
