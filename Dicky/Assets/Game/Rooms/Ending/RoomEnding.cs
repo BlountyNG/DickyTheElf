@@ -11,7 +11,9 @@ public class RoomEnding : RoomScript<RoomEnding>
 	{
 		Audio.StopMusic();
 		Audio.PlayAmbientSound("SoundTundra_Loop");
+		Audio.Play("Sound523783__bennettfilmteacher__boom");
 		
+		Prop("TheEnd").Hide();
 		
 		GameObject.Find("NGHelper").GetComponent<NGHelper>().unlockMedal(61635);
 		
@@ -36,8 +38,16 @@ public class RoomEnding : RoomScript<RoomEnding>
 	public IEnumerator OnEnterRoomAfterFade()
 	{
 		Audio.PlayMusic("SoundXmas Prayer", 1, 3f);
-		yield return E.Wait(20f);
-		yield return E.ChangeRoom(R.Title);
+		Prop("TheEnd").Show();
+		yield return Prop("TheEnd").Fade(0,1,3);
+		yield return E.Wait(5f);
+		E.Cursor.Visible = true;
+		yield return E.Break;
+	}
+
+	public IEnumerator OnInteractPropTheEnd( IProp prop )
+	{
+		E.Restart();
 		yield return E.Break;
 	}
 }

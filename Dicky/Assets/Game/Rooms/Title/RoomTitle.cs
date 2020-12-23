@@ -13,7 +13,7 @@ public class RoomTitle : RoomScript<RoomTitle>
 	{
 		Audio.StopAmbientSound(2f);
 		Audio.StopMusic(2f);
-		
+		E.Cursor.Visible = true;
 		
 		//Unlock game start medal
 		GameObject.Find("NGHelper").GetComponent<NGHelper>().unlockMedal(61339);
@@ -93,6 +93,8 @@ public class RoomTitle : RoomScript<RoomTitle>
 		
 		// Move the player to the room
 		C.Player.Room = R.Elevator;
+		
+		
 		yield return E.Break;
 	}
 

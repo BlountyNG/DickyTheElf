@@ -27,6 +27,7 @@ public class RoomMailRoom : RoomScript<RoomMailRoom>
 		yield return C.Dicky.Say("Everyone should be hard at work");
 		yield return E.WaitSkip(1.0f);
 		//Show Mail
+		Audio.Play("Sound73690__digifishmusic__air-hose-blowoff");
 		Prop("Mail").Show();
 		}
 		yield return E.Break;
@@ -66,7 +67,7 @@ public class RoomMailRoom : RoomScript<RoomMailRoom>
 		yield return C.WalkToClicked();
 		Prop("Mail").Hide();
 		yield return C.Dicky.Say("It's a letter from Santa addressed to me	");
-		yield return C.Display("Dicky, I have recieved an offer of being bought out by COMPANY NAME REDACTED Be a good fella and turn off the naughty and nice machines as all orders are being fulffilled by them now. From Santa.");
+		yield return C.Display("Dicky, I have recieved an offer of being bought out by COMPANY NAME REDACTED be a good fella and turn off the naughty and nice machines as all orders are being fulffilled by them now. From Santa.");
 		yield return E.WaitSkip();
 		yield return C.Dicky.Say("Sold out to a faceless corporation");
 		yield return C.Dicky.Say("Why would santa do this to us?");
@@ -139,9 +140,10 @@ public class RoomMailRoom : RoomScript<RoomMailRoom>
 			yield return C.Dicky.Say("This oughta work");
 			Audio.Play("SoundKnife-Attack-Metal_Impact_Clash_01");
 			I.CandyCane.Remove();
+			C.Player.ChangeRoom(R.Ending);
 		}
 		
-		C.Player.ChangeRoom(R.Ending);
+		
 		yield return E.Break;
 	}
 
