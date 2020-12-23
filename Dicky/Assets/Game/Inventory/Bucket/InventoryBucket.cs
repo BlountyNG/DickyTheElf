@@ -9,7 +9,7 @@ public class InventoryBucket : InventoryScript<InventoryBucket>
 
 	public IEnumerator OnLookAtInventory( IInventory thisItem )
 	{
-		yield return C.Display("It's a cup of elfbucks coffee");
+		yield return C.Dicky.Say("It's a cup of elfbucks coffee");
 		yield return E.Break;
 		
 	}

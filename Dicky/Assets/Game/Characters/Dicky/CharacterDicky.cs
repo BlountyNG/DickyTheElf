@@ -9,13 +9,14 @@ public class CharacterDicky : CharacterScript<CharacterDicky>
 
 	public IEnumerator OnLookAt()
 	{
+		Audio.Play("SoundCharacter2_Dialogue_Hello_01");
 		yield return C.Dicky.Say("It's me Dicky the Elf");
 		yield return E.Break;
 	}
 
 	public IEnumerator OnInteract()
 	{
-		Camera.Shake(0.05f, 0.1f);
+		Camera.Shake(0.25f, 0.1f);
 		yield return C.Dicky.Say("Hey quit it!");
 		
 		

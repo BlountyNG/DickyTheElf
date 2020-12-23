@@ -107,8 +107,10 @@ MonoBehaviour:
   - {fileID: 114281990419900940, guid: be73794dfb294f14982196647fe6e96b, type: 3}
   m_inventoryPrefabs:
   - {fileID: 114497078864246608, guid: 7a896bee3c107ce49b5aebeb3b5d1b31, type: 3}
+  - {fileID: 165521015877898690, guid: 89d6f1c3e39e7d94d8ff37ed67afdbde, type: 3}
   m_inventoryAnimations:
   - {fileID: 7400000, guid: 10856a3a6e09a994f876dd16f8272cce, type: 2}
+  - {fileID: 7400000, guid: 11d7d6bb74780294b83372fb1d49e3e0, type: 2}
   m_preloadedShaders:
   - {fileID: 4800000, guid: be43750faab6d0b40baba2acf00099df, type: 3}
   - {fileID: 4800000, guid: 67fc4aa44467421478679021cc374fc4, type: 3}

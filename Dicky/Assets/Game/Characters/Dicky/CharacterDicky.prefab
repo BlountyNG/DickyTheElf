@@ -63,7 +63,7 @@ MonoBehaviour:
     m_turnBeforeFacing: 1
     m_turnSpeedFPS: 12
     m_adjustSpeedWithScaling: 1
-    m_textColour: {r: 0, g: 0.5137255, b: 0, a: 1}
+    m_textColour: {r: 1, g: 0.22352943, b: 0.015686275, a: 1}
     m_animIdle: Idle
     m_animWalk: Walk
     m_animTalk: Idle

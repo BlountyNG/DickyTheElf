@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_data:
-    m_offsetFromCharacter: {x: 0, y: 25}
+    m_offsetFromCharacter: {x: 0, y: 0}
   m_smoothingFactor: 5
   m_smoothingMinSpeed: 2
   m_distFromPlayerBeforeScroll: {x: 25, y: 10}

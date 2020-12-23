@@ -3,8 +3,9 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -15,11 +16,16 @@ MonoBehaviour:
   - m_name: Bucket
     m_firstFrame: 1
     m_length: 1
+  - m_name: CandyCane
+    m_firstFrame: 2
+    m_length: 1
   m_packingTag: 
   m_pixelsPerUnit: 1
   m_filterMode: 0
+  m_compression: 0
+  m_crunchedCompression: 0
   m_sourcePSD: Art/Inventory.ase
-  m_sourceDirectory: C:\Users\Duzz\Desktop
+  m_sourceDirectory: C:\Users\conno\Desktop
   m_deleteImportedPngs: 1
   m_spriteDirectory: Sprites
   m_gui: 0

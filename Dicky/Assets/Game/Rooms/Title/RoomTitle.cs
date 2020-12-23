@@ -11,6 +11,10 @@ public class RoomTitle : RoomScript<RoomTitle>
 	
 	public void OnEnterRoom()
 	{
+		Audio.StopAmbientSound(2f);
+		Audio.StopMusic(2f);
+		
+		
 		//Unlock game start medal
 		GameObject.Find("NGHelper").GetComponent<NGHelper>().unlockMedal(61339);
 		

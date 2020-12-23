@@ -10,7 +10,6 @@ public class RoomStaffRoom : RoomScript<RoomStaffRoom>
 	public void OnEnterRoom()
 	{
 		
-		
 		//Hide toolbar for web games
 		G.Toolbar.Visible = false;
 		G.Toolbar.Clickable = false;
@@ -19,7 +18,15 @@ public class RoomStaffRoom : RoomScript<RoomStaffRoom>
 		Audio.Stop("Sound381577__midfag__engine-medium");
 		
 		//Set position for entry walk
-		C.Player.SetPosition(Point("Point1"));
+		if (C.Player.LastRoom == R.MailRoom)
+			{
+			C.Player.SetPosition(Point("Point2"));
+			}
+		else
+			{
+			C.Player.SetPosition(Point("Point1"));
+			}
+		
 		
 		//Hide locker
 		Prop("OpenLocker").Visible = false;
@@ -29,7 +36,15 @@ public class RoomStaffRoom : RoomScript<RoomStaffRoom>
 	public IEnumerator OnEnterRoomAfterFade()
 	{
 		//Walk into room
-		yield return C.Plr.WalkTo(Point("Point0"));
+		if (C.Player.LastRoom == R.MailRoom)
+			{
+			yield return C.Plr.WalkTo(Point("Point3"));
+			}
+		else
+			{
+			yield return C.Plr.WalkTo(Point("Point0"));
+			}
+		
 		yield return E.Break;
 	}
 
@@ -49,11 +64,11 @@ public class RoomStaffRoom : RoomScript<RoomStaffRoom>
 			yield return C.Dicky.Say("It's the Christmas Banner");
 			yield return C.Dicky.Say("Still up from last Christmas");
 			yield return C.Dicky.Say("and the Christmas before");
-			};
-		
-		yield return E.WaitSkip();
-		yield return C.Dicky.Say(" and the one before");
-		
+			}
+		else 
+			{
+			yield return C.Dicky.Say(" and the one before");
+			}
 		yield return E.Break;
 	}
 
@@ -62,11 +77,10 @@ public class RoomStaffRoom : RoomScript<RoomStaffRoom>
 		yield return C.WalkToClicked();
 		yield return C.FaceClicked();
 		yield return C.Dicky.Say("Ok time to put in my code");
-		yield return C.Dicky.Say("What was it again...");
 		
-		if (Prop("VendingMachine").UseCount > 0)
+		if (GlobalScript.Script.m_lockerCode)
 		{
-		yield return C.Dicky.Say("Oh right");
+		
 		yield return C.Dicky.Say("0");
 		yield return E.WaitSkip(1.5f);
 		yield return C.Dicky.Say("0");
@@ -75,6 +89,7 @@ public class RoomStaffRoom : RoomScript<RoomStaffRoom>
 		yield return E.WaitSkip(1.5f);
 		yield return C.Dicky.Say("9");
 		yield return C.Dicky.Say(" Done");
+		Audio.Play("SoundMicrowave_Open");
 		Prop("OpenLocker").Visible = true;
 		Prop("OpenLocker").Clickable = true;
 		
@@ -83,6 +98,7 @@ public class RoomStaffRoom : RoomScript<RoomStaffRoom>
 		
 		else
 		{
+		yield return C.Dicky.Say("What was it again...");
 		yield return C.Dicky.Say("It's the same price as my favourite snack from the vending machine");
 		yield return C.Dicky.Say("If only I could remember what that was");
 		yield return C.Dicky.Say("Darn my small elf memory");
@@ -134,13 +150,19 @@ public class RoomStaffRoom : RoomScript<RoomStaffRoom>
 
 	public IEnumerator OnEnterRegionToMailRoom( IRegion region, ICharacter character )
 	{
-		if (GlobalScript.Script.m_changedClothes)
+		if (GlobalScript.Script.m_enteredMail)
+			{
+			// Move the player to the room
+			C.Player.Room = R.MailRoom;
+			}
+		
+		else if (GlobalScript.Script.m_changedClothes)
 			{
 			yield return C.Dicky.Say("Oh boy, work time");
 			// Move the player to the room
 			C.Player.Room = R.MailRoom;
 			}
-		
+			
 		else
 			{
 			yield return C.Dicky.Say("I need to get changed first");
@@ -197,13 +219,22 @@ public class RoomStaffRoom : RoomScript<RoomStaffRoom>
 	{
 		yield return C.WalkToClicked();
 		yield return C.FaceClicked();
+		
+		if (Prop("Lockers").UseCount < 1)
+		{
+		yield return C.Dicky.Say("The company vending machine");
+		}
+		
+		else 
+		{
 		yield return C.Dicky.Say("This vending machine sells my favourite snack");
 		yield return C.Dicky.Say("Packets of sugar");
 		yield return C.Dicky.Say("They cost 39 elfies");
 		yield return C.Player.FaceDown();
 		yield return C.Dicky.Say("That's the currency Santa pays us in");
 		yield return C.Dicky.Say("It's only legal tender in the North Pole");
-		
+		GlobalScript.Script.m_lockerCode = true;
+		}
 		yield return E.Break;
 	}
 
@@ -216,6 +247,33 @@ public class RoomStaffRoom : RoomScript<RoomStaffRoom>
 	}
 
 	public IEnumerator OnExitRegionToMailRoom( IRegion region, ICharacter character )
+	{
+
+		yield return E.Break;
+	}
+
+	public IEnumerator OnLookAtPropCandyCane( IProp prop )
+	{
+		yield return C.FaceClicked();
+		yield return C.WalkToClicked();
+		yield return C.Dicky.Say("It's a candy cane");
+		yield return C.Dicky.Say("YUMMY!");
+		yield return E.Break;
+	}
+
+	public IEnumerator OnInteractPropCandyCane( IProp prop )
+	{
+		yield return C.WalkToClicked();
+		yield return C.FaceClicked();
+		yield return C.Dicky.Say("Don't mind if i do");
+		Audio.Play("SoundGetItem1");
+		Prop("CandyCane").Hide();
+		I.CandyCane.Add();
+		
+		yield return E.Break;
+	}
+
+	public IEnumerator OnUseInvPropCandyCane( IProp prop, IInventory item )
 	{
 
 		yield return E.Break;
